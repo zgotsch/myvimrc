@@ -109,6 +109,14 @@ set listchars=tab:>-,trail:-	" display the tabs in a pretty way
 set number						" show line numbers
 set cursorline					" highlight cursor line
 
+"set rtp+=~/.vim/bundle/powerline/bindings/vim
+set laststatus=2                " always show statusline
+"let g:Powerline_theme = 'solarized256'
+let g:Powerline_colorscheme = 'solarized256'
+
+autocmd InsertEnter * hi Normal guibg=black
+autocmd InsertLeave * hi Normal guibg=#002b36
+
 set scrolloff=5					" always try to show 5 lines at the top and the bottom
 
 set expandtab					" use spaces
