@@ -24,7 +24,7 @@ set showmode			" show the current mode
 set incsearch			" do incremental searching
 
 set hidden " hide buffers instead of closing them
-noremap <Leader>b :LustyJuggler<CR>
+noremap <leader>b :LustyJuggler<CR>
 
 " better window navigation
 map <C-h> <C-w>h
@@ -44,8 +44,9 @@ inoremap jk <Esc>
 " So don't use it. Good luck!
 inoremap <Esc> <nop>
 
-" Vim HARD MODE!!! Again, good luck!
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" Vim medium mode!! Again, good luck!
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
