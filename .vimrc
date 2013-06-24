@@ -23,6 +23,9 @@ set showcmd				" display incomplete commands
 set showmode			" show the current mode
 set incsearch			" do incremental searching
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 set hidden " hide buffers instead of closing them
 noremap <leader>b :LustyJuggler<CR>
 
@@ -140,8 +143,6 @@ set wildignore=*.pyc
 set nobackup
 set noswapfile
 
-" change the mapleader from \ to ,
-let mapleader=","
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
